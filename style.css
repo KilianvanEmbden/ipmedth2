@@ -8,11 +8,9 @@
   }
   
   :root{
-    --dark-jungle-green: rgba(17, 24, 22, 1);
-    --nickel: rgba(110, 114, 113, 1);
-    --ebony: rgba(103, 104, 80, 1);
-    --light-gray: rgba(216, 212, 213, 1);
-    --platinum: rgba(226, 226, 226, 1);
+    --dark-green: #00743A;
+    --dark-red: #C31024;
+    --platinum: #F2F2F2;
   }
   
   body{
