@@ -15,7 +15,7 @@
   
   body{
     font-size: 2rem;
-    background-color: var(--dark-jungle-green);
+    background-color: var(--dark-green);
   }
   
   h1{
@@ -50,6 +50,6 @@
   section{
     min-height: 100vh;
     border-bottom: 0.5rem solid var(--platinum);
-    background-color: var(--dark-jungle-green);
+    background-color: var(--dark-green);
   }
   
