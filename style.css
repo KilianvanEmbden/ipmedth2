@@ -1,0 +1,57 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+  }
+  
+  html{
+    font-size: 62,5%;
+  }
+  
+  :root{
+    --dark-jungle-green: rgba(17, 24, 22, 1);
+    --nickel: rgba(110, 114, 113, 1);
+    --ebony: rgba(103, 104, 80, 1);
+    --light-gray: rgba(216, 212, 213, 1);
+    --platinum: rgba(226, 226, 226, 1);
+  }
+  
+  body{
+    font-size: 2rem;
+    background-color: var(--dark-jungle-green);
+  }
+  
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 2.4rem;
+  }
+  
+  nav{
+    background-color: rgba(110, 114, 113, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-size: 20px;
+  }
+  
+  .nav-links li{
+    list-style: none;
+  }
+  
+  .nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+  }
+  
+  section{
+    min-height: 100vh;
+    border-bottom: 0.5rem solid var(--platinum);
+    background-color: var(--dark-jungle-green);
+  }
+  

@@ -8,8 +8,31 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 <body>
-    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWUyqO4fBh3ob" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    <div id="root"></div>
-    <script src="main.js" type="text/javascript"></script>
+    <main>    
+    <!-- Navigatie -->
+    <nav>
+          <ul class="nav-links">
+            <li class="selected">Home</li>
+            <li>About</li>
+            <li>documentary</li>
+          </ul>
+    </nav>
+
+    <!-- Eerste sectie; landingpage -->
+    <section class="main-intro">
+        <header>
+          <h1>The sniper of Kobani</h1>
+        </header>
+        <article class="main-intro--explenation">
+          <h2>The fight agains ISIS</h2>
+          <p>Scrolling down the page will lead you trought a story about the fight against ISIS. You will see the perspective of a kurdish Sniper and step in his shoes.</p>
+        </article>
+    </section>
+
+        <iframe id="radio_player" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWUyqO4fBh3ob" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <div id="root"></div>
+        <script src="main.js" type="text/javascript"></script>
+    </main>
+
 </body>
 </html>
