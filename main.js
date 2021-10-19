@@ -11,16 +11,16 @@ const location4_now = "https://www.google.com/maps/embed?pb=!4v1634035228278!6m8
 
 //on scroll load nav title
 window.onscroll = function(event){
-    if(window.scrollY < vh){
+    if(window.scrollY < 0.7 * vh){
         document.getElementById("nav_location").innerHTML = "Home";
       }
-    if(window.scrollY >= vh){
+    if(window.scrollY >= 0.7 * vh){
       document.getElementById("nav_location").innerHTML = "About";
     }
-    if(window.scrollY >= 2 * vh){
+    if(window.scrollY >= 2 * 0.7 * vh){
       document.getElementById("nav_location").innerHTML = "Map";
     }
-    if(window.scrollY >= 3 * vh){
+    if(window.scrollY >= 3 * 0.7 * vh){
         document.getElementById("nav_location").innerHTML = '<button id="now_button" class="now_button" onclick="change_time()">now</button>';
       }
   };
