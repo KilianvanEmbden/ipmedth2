@@ -1,3 +1,5 @@
+const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+
 const location1 = "https://www.google.com/maps/embed?pb=!4v1634037219498!6m8!1m7!1si_KCZULFOFPktBAvTske2A!2m2!1d52.31940201776736!2d4.574023403533804!3f115.06077041181338!4f17.26147147122458!5f0.6706194944150499"
 const location1_now = "https://www.google.com/maps/embed?pb=!4v1634035228278!6m8!1m7!1sD8dy7MUPHSVNfeNGrHR_jg!2m2!1d37.01071479227894!2d37.79717804131948!3f70.45209929645083!4f0.6096125392529359!5f0.7820865974627469"
 const location2 = "https://www.google.com/maps/embed?pb=!4v1634044176161!6m8!1m7!1sCAoSLEFGMVFpcFBGNGFkMWhBRTVjVGZITlBBLUJfaFl2TFpsQ0RPYWQ3M3hHN0ta!2m2!1d52.36394530063137!2d4.896167760495587!3f336.17892797128!4f-11.54856712527409!5f0.7820865974627469"
@@ -6,6 +8,22 @@ const location3 = "https://www.google.com/maps/embed?pb=!4v1634044330846!6m8!1m7
 const location3_now = "https://www.google.com/maps/embed?pb=!4v1634035228278!6m8!1m7!1sD8dy7MUPHSVNfeNGrHR_jg!2m2!1d37.01071479227894!2d37.79717804131948!3f70.45209929645083!4f0.6096125392529359!5f0.7820865974627469"
 const location4 = "https://www.google.com/maps/embed?pb=!4v1634044366387!6m8!1m7!1sSR955aJXM4ILbPL7Te59Aw!2m2!1d52.36935847723119!2d4.901749024372501!3f120.29985002870198!4f-7.934748951861167!5f0.7820865974627469"
 const location4_now = "https://www.google.com/maps/embed?pb=!4v1634035228278!6m8!1m7!1sD8dy7MUPHSVNfeNGrHR_jg!2m2!1d37.01071479227894!2d37.79717804131948!3f70.45209929645083!4f0.6096125392529359!5f0.7820865974627469"
+
+//on scroll load nav title
+window.onscroll = function(event){
+    if(window.scrollY < vh){
+        document.getElementById("nav_location").innerHTML = "Home";
+      }
+    if(window.scrollY >= vh){
+      document.getElementById("nav_location").innerHTML = "About";
+    }
+    if(window.scrollY >= 2 * vh){
+      document.getElementById("nav_location").innerHTML = "Map";
+    }
+    if(window.scrollY >= 3 * vh){
+        document.getElementById("nav_location").innerHTML = '<button id="now_button" class="now_button" onclick="change_time()">now</button>';
+      }
+  };
 
 map_controlls = (pin) => {
 
