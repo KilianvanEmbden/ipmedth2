@@ -60,19 +60,26 @@
     opacity: 40%;
     height: 4rem;
     width: 4rem;
-    position: fixed;
+    position: relative;
   }
   #radio_player_iframe{
-    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
   }
 
   #radio_player_fig{
     top: 0;
     right: 0;
-    height: 4rem;
-    width: 4rem;
-    position: fixed;
+    left: 0;
+    bottom: 0;
+    /* height: 4rem;
+    width: 4rem; */
+    position: absolute;
     pointer-events: none;
+    z-index: 1;
   }
   #radio_player_fig img{
     height: 100%;
