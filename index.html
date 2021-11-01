@@ -3,9 +3,10 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>The Sniper of Kobani</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="icon" href="img/favicon.png">
 </head>
 <body>
     <main>    
@@ -45,8 +46,36 @@
             </map>
         </figure>
     </section>
-    <section class="section_streetview">
-        <iframe id="maps_image" src="https://www.google.com/maps/embed?pb=!4v1634035228278!6m8!1m7!1sD8dy7MUPHSVNfeNGrHR_jg!2m2!1d37.01071479227894!2d37.79717804131948!3f70.45209929645083!4f0.6096125392529359!5f0.7820865974627469" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>
+
+    <img id="pin1" class="pin" onclick="map_controlls(id)" src="img/marker.png" alt="map marker">
+    <img id="pin2" class="pin" onclick="map_controlls(id)" src="img/marker.png" alt="map marker">
+    <img id="pin3" class="pin" onclick="map_controlls(id)" src="img/marker.png" alt="map marker">
+    <img id="pin4" class="pin" onclick="map_controlls(id)" src="img/marker.png" alt="map marker">
+
+    <button id="infoBtn">info</button>
+    <button id="mapBtn">360</button>
+
+    <div id="popupModal" class="modal">
+        <div class="popup">
+            <div class="popup_title">
+                <h2> plaats 1 </h2>
+                <span class="close_popup">&times;</span>
+            </div>
+            <p>deze poku is voor 010!!! Dikke akka op je moeder je weet zelf. Ze zuicht aan mijn slang rond half 11. </p>
+        </div>
+    </div>
+
+    <div id="mapModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close_modal">&times;</span>
+            
+            <iframe id="maps_image" src="https://www.google.com/maps/embed?pb=!4v1634035228278!6m8!1m7!1sD8dy7MUPHSVNfeNGrHR_jg!2m2!1d37.01071479227894!2d37.79717804131948!3f70.45209929645083!4f0.6096125392529359!5f0.7820865974627469" width="100%" height="84%" style="border:0;" loading="lazy"></iframe>
+            <button id="now_button" class="now_button" onclick="change_time()">now</button>
+        </div>
+      
+      </div>
+    <section class="section_streetview"> 
         <p>Tekst</p>
     </section>
     </main>

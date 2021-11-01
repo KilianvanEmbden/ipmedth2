@@ -114,3 +114,77 @@
   .section_streetview{
     
   }
+
+  /*popup styling*/
+    .popup{
+        border-radius: 10px 10px 0px 0px;
+        background-color: var(--black);
+        bottom: 0;
+        position: fixed;
+        color: var(--platinum);
+    }
+
+    .popup_title > h2{
+        display: inline-block;
+    }
+
+    .popup_title{
+        border-radius: 10px 10px 0px 0px;
+        background-color: var(--night);
+        width: 100vw;
+    }
+
+    .close_popup{
+        float: right;
+    }
+
+  /*modal styling */
+  #mapModal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    overflow: auto;
+    animation-name: openwidth;
+    animation-duration: 0.22s;
+  }
+  
+  @keyframes openwidth {
+    from {
+      transform: translateX(50vw) translateY(50vh);
+      border-radius: 1000px;
+      height: 0vw;
+      width: 0vw;
+    }
+    to {
+      height: 100vh;
+      width: 100vw;
+    }
+  }
+
+  .modal-content {
+    background-color: #1A2F34;
+    margin: auto;
+    height: 100vh;
+  }
+
+  .now_button {
+    height: 8vh;
+    width: 100vw;
+  }
+
+  .close_modal {
+    color: #aaaaaa;
+    float: right;
+    font-size: 48px;
+    height: 8vh;
+    font-weight: bold;
+  }
+  
+  .close_modal:hover,
+  .close_modal:focus {
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+  }

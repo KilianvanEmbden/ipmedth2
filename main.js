@@ -20,9 +20,6 @@ window.onscroll = function(event){
     if(window.scrollY >= 2 * 0.7 * vh){
       document.getElementById("nav_location").innerHTML = "Map";
     }
-    if(window.scrollY >= 3 * 0.7 * vh){
-        document.getElementById("nav_location").innerHTML = '<button id="now_button" class="now_button" onclick="change_time()">now</button>';
-      }
   };
 
 map_controlls = (pin) => {
@@ -87,4 +84,48 @@ change_time = () => {
 
 change_time_button = (text) => {
     document.getElementById("now_button").innerHTML = text;
+}
+
+
+//info popup
+var modalinfo = document.getElementById("popupModal");
+var btninfo = document.getElementById("infoBtn");
+var closepopup = document.getElementsByClassName("close_popup")[0];
+btninfo.onclick = function() {
+    modalinfo.style.display = "block";
+}
+closepopup.onclick = function() {
+    modalinfo.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modalinfo) {
+    modalinfo.style.display = "none";
+    }
+}
+
+//map popup
+// Get the modal
+var modalmap = document.getElementById("mapModal");
+
+// Get the button that opens the modal
+var btnmap = document.getElementById("mapBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close_modal")[0];
+
+// When the user clicks the button, open the modal 
+btnmap.onclick = function() {
+    modalmap.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modalmap.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modalmap) {
+    modalmap.style.display = "none";
+    }
 }
