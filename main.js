@@ -37,7 +37,7 @@ window.onscroll = function(event){
 
     function setStickyContainersSize(){
         document.querySelectorAll('.sticky-container').forEach(function(container){
-            const stikyContainerHeight = (container.querySelector('.main').offsetWidth + window.innerHeight);
+            const stikyContainerHeight = (container.querySelector('.main').offsetWidth * 2 + window.innerHeight);
             container.setAttribute('style', 'height: ' + stikyContainerHeight + 'px');
         });
     }
