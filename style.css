@@ -38,6 +38,7 @@
     align-items: center;
     min-height: 8vh;
     font-size: 20px;
+    z-index: 10;
   }
   
   .navbar li{
@@ -80,20 +81,50 @@
     
   }
 
-  section{
+  .section{
     color: var(--iron);
     height: 100vh;
     border-bottom: 0.5rem solid var(--platinum);
     background-color: var(--night);
     overflow: hidden;
   }
+ 
+  .section_main-intro{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+
+  .vertical-section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main {
+    overflow-x: hidden;
+    display: flex;
+    position: sticky;
+    top:0;
+  }
+  .vertical {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4ch;
+  }
+
+  .vertical:nth-child(even) {
+    background-color: teal;
+    color: white;
+  }
+  
   
   .section_main-intro{
     height: 108vh;
-  }
-
-  .section_map{
-
   }
 
   .section_map figure img{
@@ -109,10 +140,6 @@
     height: 3rem;
     width: 3rem;
     z-index: 1;
-  }
-
-  .section_streetview{
-    
   }
 
   /*popup styling*/
