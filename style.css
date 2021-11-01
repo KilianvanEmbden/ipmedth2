@@ -124,6 +124,10 @@
         color: var(--platinum);
     }
 
+    #popupModal{
+      display: none;
+    }
+
     .popup_title > h2{
         display: inline-block;
     }
