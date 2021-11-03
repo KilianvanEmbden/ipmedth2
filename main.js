@@ -37,7 +37,7 @@ window.onscroll = function(event){
 
     function setStickyContainersSize(){
         document.querySelectorAll('.sticky-container').forEach(function(container){
-            const stikyContainerHeight = (container.querySelector('.main').offsetWidth * 2 + window.innerHeight);
+            const stikyContainerHeight = (container.querySelector('.vertical-main').offsetWidth * 2.5 + window.innerHeight);
             container.setAttribute('style', 'height: ' + stikyContainerHeight + 'px');
         });
     }
@@ -62,7 +62,7 @@ window.onscroll = function(event){
         let g_canScrollHorizontally = isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
 
         if(g_canScrollHorizontally){
-            containerInViewPort.querySelector('.main').scrollLeft += (1.3 * evt.deltaY);
+            containerInViewPort.querySelector('.vertical-main').scrollLeft += ( evt.deltaY);
         }
     }
 })();
@@ -130,6 +130,15 @@ change_time = () => {
 
 change_time_button = (text) => {
     document.getElementById("now_button").innerHTML = text;
+}
+
+//Map pins displaying after clicking
+let pn = 0;
+for(let i = 0; i < document.getElementsByClassName("pin").length; i++){
+    document.getElementsByClassName("pin")[i].onclick = function() {
+        document.getElementsByClassName("pin")[pn].style.opacity = "1";
+        pn++;
+    };
 }
 
 
