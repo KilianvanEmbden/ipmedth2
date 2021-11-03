@@ -88,11 +88,12 @@
     background-color: var(--night);
     overflow: hidden;
   }
- 
+
   .section_main-intro{
     justify-content: center;
     align-items: center;
     display: flex;
+    
   }
 
 
@@ -102,7 +103,7 @@
     align-items: center;
     justify-content: center;
   }
-  .main {
+  .vertical-main {
     overflow-x: hidden;
     display: flex;
     position: sticky;
@@ -127,20 +128,37 @@
     height: 108vh;
   }
 
-  .section_map figure img{
+  .section_map > figure{
     width: 100%;
-  }
-  .section_map figure{
-    width: 100%;
-    overflow: scroll;
+    position: relative;
   }
   .pin{
-    top: 50%;
-    left: 50%;
+    position: absolute;
     height: 3rem;
     width: 3rem;
-    z-index: 1;
+    z-index: 3;
+    opacity: 0.3;
   }
+  .pin:nth-child(2){
+    top: 73%;
+    left: 33%;
+  }
+  .pin:nth-child(3){
+    top: 71%;
+    left: 39.4%;
+  }
+  .pin:nth-child(4){
+    top: 64%;
+    left: 45%;
+  }
+  .pin:nth-child(5){
+    top: 67%;
+    left: 60.5%;
+  }
+    .pin:nth-child(6){
+      top: 44%;
+      left: 52.5%;
+    }
 
   /*popup styling*/
     .popup{
