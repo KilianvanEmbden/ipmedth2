@@ -22,10 +22,19 @@
   }
   
   h1{
-    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    font-size: 2em;
+    color: var(--platinum);
+    z-index: 2;
   }
+
   h2{
     font-size: 2.4rem;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
   
   nav{
@@ -88,14 +97,66 @@
     background-color: var(--night);
     overflow: hidden;
   }
- 
-  .section_main-intro{
-    justify-content: center;
-    align-items: center;
-    display: flex;
+
+  .banner{
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+
+  .haron{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    animation-delay: 1s;
+    animation-name: fadeHaron;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .overlay{
+    position: absolute;
+    background-color: var(--black);
+    width: 100%;
+    height: 100%;
+    animation-name: fade;
+    z-index: 1;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
   }
 
 
+ 
+  
+  @keyframes fade {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.3;
+    }
+  }
+
+  @keyframes fadeHaron {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  .section_main-intro{
+    position: relative;
+    text-align: center;
+    display: flex;
+  }
+
+  /*verticaal scrollen styling*/
   .vertical-section{
     height: 100vh;
     display: flex;
@@ -149,6 +210,7 @@
         bottom: 0;
         position: fixed;
         color: var(--platinum);
+        z-index: 10000;
     }
 
     #popupModal{
@@ -160,17 +222,22 @@
     }
 
     .popup_title{
+      box-sizing: border-box;
         border-radius: 10px 10px 0px 0px;
+        border-top: 2px solid #000000;
+        border-right: 2px solid #000000;
+        border-left: 2px solid #000000;
         background-color: var(--night);
         width: 100vw;
     }
 
     .close_popup{
-        float: right;
+        float: right; /* FIXME deze staat nog niet in het midden */
     }
 
   /*modal styling */
   #mapModal {
+    z-index: 11;
     display: none;
     position: fixed;
     left: 0;
@@ -194,23 +261,39 @@
     }
   }
 
+.modal_top{
+  width: 100vw;
+  height: 8vh;
+  background-color: var(--night);
+}
+
   .modal-content {
-    background-color: #1A2F34;
+    background-color: var(--platinum); /* om een of andere rede gaat de ruimte tussen de iframe en de knop niet weg, dit moet dus dezelfde kleur als de knop */
     margin: auto;
     height: 100vh;
+    overflow: hidden;
+  }
+
+  #maps_image{
+
   }
 
   .now_button {
-    height: 8vh;
+    transform: translateY(-5px);
+    height: 7.2vh;
     width: 100vw;
+    background-color: var(--platinum); /* FIXME hier nog ff een mooie knop van maken */
+    border-style: none;
   }
 
   .close_modal {
     color: #aaaaaa;
     float: right;
-    font-size: 48px;
+    font-size: 8vh; /* FIXME deze staat nog niet in het midden */
     height: 8vh;
     font-weight: bold;
+    justify-content: center;
+    margin: 0;
   }
   
   .close_modal:hover,
