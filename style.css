@@ -19,6 +19,7 @@
   body{
     font-size: 2rem;
     background-color: var(--night);
+    color: var(--iron);
   }
   
   h1{
@@ -92,8 +93,7 @@
 
   .section{
     color: var(--iron);
-    height: 100vh;
-    border-bottom: 0.5rem solid var(--platinum);
+    height: 92vh;
     background-color: var(--night);
     overflow: hidden;
   }
@@ -159,7 +159,7 @@
 
   /*verticaal scrollen styling*/
   .vertical-section{
-    height: 100vh;
+    height: 92vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,18 +172,23 @@
   }
   .vertical {
     min-width: 100vw;
-    min-height: 100vh;
+    min-height: 92vh;
+    margin-top: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 4ch;
   }
 
-  .vertical:nth-child(even) {
+  .vertical:nth-child(odd) {
     background-color: teal;
     color: white;
   }
   
+  .story_img{
+    max-width: 100vw;
+    max-height: 92vh;
+  }
   
   .section_main-intro{
     height: 108vh;
@@ -319,4 +324,14 @@
     color: whitesmoke;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 600px) {
+    body{
+      font-size: 1rem;
+    }
+
+    h2{
+      font-size: 1.5rem;
+    }
   }

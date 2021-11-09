@@ -17,11 +17,12 @@ window.onscroll = function(event){
     if(window.scrollY >= 0.7 * vh){
       document.getElementById("nav_location").innerHTML = "About";
     }
-    if(window.scrollY >= 2 * 0.7 * vh){
+    if(window.scrollY >= 14.7 * vh){
       document.getElementById("nav_location").innerHTML = "Map";
     }
   };
 
+  //horizontal scroll script
   (function(){
     init();
 
@@ -35,20 +36,21 @@ window.onscroll = function(event){
         window.addEventListener("wheel", wheelHandler);        
     }
 
+    //How much does user need to scroll
     function setStickyContainersSize(){
         document.querySelectorAll('.sticky-container').forEach(function(container){
-            const stikyContainerHeight = (container.querySelector('.vertical-main').offsetWidth * 2.5 + window.innerHeight);
+            const stikyContainerHeight = (container.querySelector('.vertical-main').offsetWidth * 2.5 +  window.innerHeight);
             container.setAttribute('style', 'height: ' + stikyContainerHeight + 'px');
         });
     }
 
     function isElementInViewport (el) {
+        //Returns scroll position of user on screen
         const rect = el.getBoundingClientRect();
         return rect.top <= 0 && rect.bottom > document.documentElement.clientHeight;
     }
 
     function wheelHandler(evt){
-        
         const containerInViewPort = Array.from(document.querySelectorAll('.sticky-container')).filter(function(container){
             return isElementInViewport(container);
         })[0];
@@ -57,7 +59,8 @@ window.onscroll = function(event){
             return;
         }
 
-        var isPlaceHolderBelowTop = containerInViewPort.offsetTop < document.documentElement.scrollTop;
+        const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+        var isPlaceHolderBelowTop = + containerInViewPort.offsetTop < document.documentElement.scrollTop;
         var isPlaceHolderBelowBottom = containerInViewPort.offsetTop + containerInViewPort.offsetHeight > document.documentElement.scrollTop;
         let g_canScrollHorizontally = isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
 
