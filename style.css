@@ -11,7 +11,7 @@
     --dark-green: #00743A;
     --dark-red: #C31024;
     --platinum: #F2F2F2;
-    --iron: #c4c4c4;
+    --platinum: #c4c4c4;
     --night: #1A2F34;
     --black: #000000;
   }
@@ -19,7 +19,7 @@
   body{
     font-size: 2rem;
     background-color: var(--night);
-    color: var(--iron);
+    color: var(--platinum);
   }
   
   h1{
@@ -92,7 +92,7 @@
   }
 
   .section{
-    color: var(--iron);
+    color: var(--platinum);
     height: 92vh;
     background-color: var(--night);
     overflow: hidden;
@@ -246,6 +246,7 @@
 
     .popup_title > h2{
         display: inline-block;
+        font-size: 2rem;
     }
 
     .popup_title{
@@ -257,15 +258,28 @@
       background-color: var(--night);
       width: 100vw;
       height: 3rem;
+
+    }
+
+    .right{
+      float: right;
     }
 
     .mapBtn{
       height: 100%;
-      float: right;
+      border: none;
+      color: var(--platinum);
+      background-color: var(--night);
+      font-size: 2rem;
+      border-right: 2px solid #000000;
+      border-left: 2px solid #000000;
+      padding-left: 3px;
+      padding-right: 3px;
     }
 
     .close_popup{
-        float: right; /* FIXME deze staat nog niet in het midden */
+        /* FIXME deze staat nog niet in het midden */
+        font-size: 3rem;
     }
 
   /*modal styling */
