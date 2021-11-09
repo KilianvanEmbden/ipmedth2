@@ -203,18 +203,18 @@
     height: 3rem;
     width: 3rem;
     z-index: 3;
-    opacity: 0.3;
+    display: none;
   }
   .pin:nth-child(2){
     top: 73%;
-    left: 33%;
+    left: 20%;
   }
   .pin:nth-child(3){
     top: 71%;
     left: 39.4%;
   }
   .pin:nth-child(4){
-    top: 64%;
+    top: 60%;
     left: 45%;
   }
   .pin:nth-child(5){
@@ -225,6 +225,10 @@
       top: 44%;
       left: 52.5%;
     }
+
+  #pin1{
+    display: block;
+  }
 
   /*popup styling*/
     .popup{
@@ -246,12 +250,18 @@
 
     .popup_title{
       box-sizing: border-box;
-        border-radius: 10px 10px 0px 0px;
-        border-top: 2px solid #000000;
-        border-right: 2px solid #000000;
-        border-left: 2px solid #000000;
-        background-color: var(--night);
-        width: 100vw;
+      border-radius: 10px 10px 0px 0px;
+      border-top: 2px solid #000000;
+      border-right: 2px solid #000000;
+      border-left: 2px solid #000000;
+      background-color: var(--night);
+      width: 100vw;
+      height: 3rem;
+    }
+
+    .mapBtn{
+      height: 100%;
+      float: right;
     }
 
     .close_popup{
@@ -260,7 +270,7 @@
 
   /*modal styling */
   #mapModal {
-    z-index: 11;
+    z-index: 1000000;
     display: none;
     position: fixed;
     left: 0;
@@ -295,10 +305,6 @@
     margin: auto;
     height: 100vh;
     overflow: hidden;
-  }
-
-  #maps_image{
-
   }
 
   .now_button {

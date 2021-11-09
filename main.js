@@ -8,6 +8,9 @@ const location3 = "https://www.google.com/maps/embed?pb=!4v1634044330846!6m8!1m7
 const location3_now = "https://www.google.com/maps/embed?pb=!4v1634035228278!6m8!1m7!1sD8dy7MUPHSVNfeNGrHR_jg!2m2!1d37.01071479227894!2d37.79717804131948!3f70.45209929645083!4f0.6096125392529359!5f0.7820865974627469"
 const location4 = "https://www.google.com/maps/embed?pb=!4v1634044366387!6m8!1m7!1sSR955aJXM4ILbPL7Te59Aw!2m2!1d52.36935847723119!2d4.901749024372501!3f120.29985002870198!4f-7.934748951861167!5f0.7820865974627469"
 const location4_now = "https://www.google.com/maps/embed?pb=!4v1634035228278!6m8!1m7!1sD8dy7MUPHSVNfeNGrHR_jg!2m2!1d37.01071479227894!2d37.79717804131948!3f70.45209929645083!4f0.6096125392529359!5f0.7820865974627469"
+const location5 = "https://www.google.com/maps/embed?pb=!4v1634044366387!6m8!1m7!1sSR955aJXM4ILbPL7Te59Aw!2m2!1d52.36935847723119!2d4.901749024372501!3f120.29985002870198!4f-7.934748951861167!5f0.7820865974627469"
+const location5_now = "https://www.google.com/maps/embed?pb=!4v1634035228278!6m8!1m7!1sD8dy7MUPHSVNfeNGrHR_jg!2m2!1d37.01071479227894!2d37.79717804131948!3f70.45209929645083!4f0.6096125392529359!5f0.7820865974627469"
+
 
 //on scroll load nav title
 window.onscroll = function(event){
@@ -77,18 +80,37 @@ map_controlls = (pin) => {
         case "pin1":
             console.log("pin 1 clicked");
             document.getElementById("maps_image").src = location1;
+            document.getElementById("pin2").style.display = "block";
+            modalinfo.style.display = "block";
+            document.getElementById("popupTitle").innerHTML = "plaats 1";
+            document.getElementById("popupContent").innerHTML = "Hier ging ik altijd met mijn matties jonko klappen";
             break;
         case "pin2":
             console.log("pin 2 clicked");
             document.getElementById("maps_image").src = location2;
+            document.getElementById("pin3").style.display = "block";
+            document.getElementById("popupTitle").innerHTML = "plaats 2";
+            document.getElementById("popupContent").innerHTML = "Hebban olla vogala nestas hagunnan hinase hic enda thu uuat unbidan uue nu";
             break;
         case "pin3":
             console.log("pin 3 clicked");
             document.getElementById("maps_image").src = location3;
+            document.getElementById("pin4").style.display = "block";
+            document.getElementById("popupTitle").innerHTML = "plaats 3";
+            document.getElementById("popupContent").innerHTML = "hele mooie text of ik weet niks";
             break;
         case "pin4":
             console.log("pin 4 clicked");
             document.getElementById("maps_image").src = location4;
+            document.getElementById("pin5").style.display = "block";
+            document.getElementById("popupTitle").innerHTML = "plaats 4";
+            document.getElementById("popupContent").innerHTML = "het is wit en loopt in de wei";
+            break;
+        case "pin5":
+            console.log("pin 4 clicked");
+            document.getElementById("maps_image").src = location5;
+            document.getElementById("popupTitle").innerHTML = "plaats 5";
+            document.getElementById("popupContent").innerHTML = "kudde yogurt";
             break;
     }
 };
@@ -128,30 +150,26 @@ change_time = () => {
             document.getElementById("maps_image").src = location4;
             change_time_button("now");
             break;
+        case location5:
+            document.getElementById("maps_image").src = location4_now;
+            change_time_button("then");
+            break;
+        case location5_now:
+            document.getElementById("maps_image").src = location4;
+            change_time_button("now");
+            break;
     }
 }
 
 change_time_button = (text) => {
     document.getElementById("now_button").innerHTML = text;
-}
-
-//Map pins displaying after clicking
-let pn = 0;
-for(let i = 0; i < document.getElementsByClassName("pin").length; i++){
-    document.getElementsByClassName("pin")[i].onclick = function() {
-        document.getElementsByClassName("pin")[pn].style.opacity = "1";
-        pn++;
-    };
-}
-
+}   
 
 //info popup
 var modalinfo = document.getElementById("popupModal");
-var btninfo = document.getElementById("infoBtn");
+var btninfo = document.getElementById("pin1");
 var closepopup = document.getElementsByClassName("close_popup")[0];
-btninfo.onclick = function() {
-    modalinfo.style.display = "block";
-}
+
 closepopup.onclick = function() {
     modalinfo.style.display = "none";
 }
