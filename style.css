@@ -17,7 +17,7 @@
   }
   
   body{
-    font-size: 2rem;
+    font-size: 1rem;
     background-color: var(--night);
     color: var(--iron);
   }
@@ -33,7 +33,7 @@
   }
 
   h2{
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     padding-left: 10vw;
     padding-right: 10vw;
   }
@@ -65,30 +65,37 @@
   }
   
   #radio_player{
-    right: 0;
-    top: 0;
+    right: 1vh;
+    top: 1vh;
     overflow: hidden;
-    opacity: 40%;
-    height: 4rem;
-    width: 4rem;
+    height: 6vh;
+    width: 6vh;
     position: fixed;
+    border-radius: 50%;
   }
   #radio_player_iframe{
     z-index: 1;
+    position: relative;
+    top:-20px;
+    left: -20px;
+    opacity: 1%;
   }
 
   #radio_player_fig{
-    top: 0;
-    right: 0;
-    height: 4rem;
-    width: 4rem;
+    height: 6vh;
+    width: 6vh;
+    right: 1vh;
+    top: 1vh;
     position: fixed;
     pointer-events: none;
   }
   #radio_player_fig img{
     height: 100%;
     width: 100%;
-    
+  }
+
+  @keyframes rotate360{
+    100% {transform: rotate(360deg);}
   }
 
   .section{
@@ -332,12 +339,12 @@
     cursor: pointer;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 1500px) {
     body{
-      font-size: 1rem;
+      font-size: 2rem;
     }
 
     h2{
-      font-size: 1.5rem;
+      font-size: 2.4rem;
     }
   }
