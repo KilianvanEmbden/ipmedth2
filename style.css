@@ -245,12 +245,18 @@
 
     .popup_title{
       box-sizing: border-box;
-        border-radius: 10px 10px 0px 0px;
-        border-top: 2px solid #000000;
-        border-right: 2px solid #000000;
-        border-left: 2px solid #000000;
-        background-color: var(--night);
-        width: 100vw;
+      border-radius: 10px 10px 0px 0px;
+      border-top: 2px solid #000000;
+      border-right: 2px solid #000000;
+      border-left: 2px solid #000000;
+      background-color: var(--night);
+      width: 100vw;
+      height: 3rem;
+    }
+
+    .mapBtn{
+      height: 100%;
+      float: right;
     }
 
     .close_popup{
@@ -294,10 +300,6 @@
     margin: auto;
     height: 100vh;
     overflow: hidden;
-  }
-
-  #maps_image{
-
   }
 
   .now_button {
