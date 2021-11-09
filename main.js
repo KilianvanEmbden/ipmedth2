@@ -25,7 +25,17 @@ window.onscroll = function(event){
     }
   };
 
+  //music player spinning 
+  document.getElementById("radio_player_iframe").addEventListener("mouseover", function(){
+      console.log("if teogevoegd");
+    if(window.event === 0){
+        console.log("Nu draaien bitch");
+        document.getElementById("radio_player_img").style.animation = "rotate360 4s linear infinite";
+    }
+});
+
   //horizontal scroll script
+  //alvarotrigo.com/blog/scroll-horizontally-with-mouse-wheel-vanilla-java/
   (function(){
     init();
 
@@ -62,6 +72,7 @@ window.onscroll = function(event){
             return;
         }
 
+        //compares scroll and size of containers to show current element
         const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
         var isPlaceHolderBelowTop = + containerInViewPort.offsetTop < document.documentElement.scrollTop;
         var isPlaceHolderBelowBottom = containerInViewPort.offsetTop + containerInViewPort.offsetHeight > document.documentElement.scrollTop;
