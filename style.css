@@ -12,7 +12,6 @@
     --dark-green: #00743A;
     --dark-red: #C31024;
     --platinum: #F2F2F2;
-    --platinum: #c4c4c4;
     --night: #1A2F34;
     --black: #000000;
   }
@@ -23,6 +22,12 @@
     color: var(--platinum);
   }
   
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
   h1{
     position: absolute;
     top: 50%;
@@ -140,9 +145,6 @@
     animation-fill-mode: forwards;
   }
 
-
- 
-  
   @keyframes fade {
     from {
       opacity: 1;
@@ -193,7 +195,7 @@
 
   .vertical:nth-child(odd) {
     background-color: teal;
-    color: white;
+    color: var(--platinum);
   }
   
   .story_img{
@@ -217,23 +219,23 @@
     display: none;
   }
   .pin:nth-child(2){
-    top: 73%;
+    top: 63%;
     left: 20%;
   }
   .pin:nth-child(3){
-    top: 71%;
+    top: 61%;
     left: 39.4%;
   }
   .pin:nth-child(4){
-    top: 60%;
+    top: 50%;
     left: 45%;
   }
   .pin:nth-child(5){
-    top: 67%;
+    top: 57%;
     left: 60.5%;
   }
     .pin:nth-child(6){
-      top: 44%;
+      top: 34%;
       left: 52.5%;
     }
 
@@ -302,6 +304,10 @@
       font-size: 2rem;
     }
 
+    #iframe_img_container{
+      height: 84%;
+    }
+
   /*modal styling */
   #mapModal {
     z-index: 1000000;
@@ -361,9 +367,19 @@
   
   .close_modal:hover,
   .close_modal:focus {
-    color: whitesmoke;
+    color: var(--platinum);
     text-decoration: none;
     cursor: pointer;
+  }
+
+  .section_outro{
+    transform: translateY(50%);
+    justify-content: center;
+    text-align: center;
+  }
+
+  .section_outro a{
+    color: var(--platinum);
   }
 
   @media screen and (min-width: 1500px) {

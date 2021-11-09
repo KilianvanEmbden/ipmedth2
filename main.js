@@ -1,15 +1,19 @@
 const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
 
-const location1 = "https://www.google.com/maps/embed?pb=!4v1634037219498!6m8!1m7!1si_KCZULFOFPktBAvTske2A!2m2!1d52.31940201776736!2d4.574023403533804!3f115.06077041181338!4f17.26147147122458!5f0.6706194944150499"
-const location1_now = "https://www.google.com/maps/embed?pb=!4v1634035228278!6m8!1m7!1sD8dy7MUPHSVNfeNGrHR_jg!2m2!1d37.01071479227894!2d37.79717804131948!3f70.45209929645083!4f0.6096125392529359!5f0.7820865974627469"
-const location2 = "https://www.google.com/maps/embed?pb=!4v1634044176161!6m8!1m7!1sCAoSLEFGMVFpcFBGNGFkMWhBRTVjVGZITlBBLUJfaFl2TFpsQ0RPYWQ3M3hHN0ta!2m2!1d52.36394530063137!2d4.896167760495587!3f336.17892797128!4f-11.54856712527409!5f0.7820865974627469"
-const location2_now = "https://www.google.com/maps/embed?pb=!4v1634035228278!6m8!1m7!1sD8dy7MUPHSVNfeNGrHR_jg!2m2!1d37.01071479227894!2d37.79717804131948!3f70.45209929645083!4f0.6096125392529359!5f0.7820865974627469"
-const location3 = "https://www.google.com/maps/embed?pb=!4v1634044330846!6m8!1m7!1sxCVfqyN-Y_SZ7KRKshsoGg!2m2!1d52.36826091287725!2d4.897546028032399!3f25.093862902312566!4f-22.02420906433352!5f1.1924812503605782"
-const location3_now = "https://www.google.com/maps/embed?pb=!4v1634035228278!6m8!1m7!1sD8dy7MUPHSVNfeNGrHR_jg!2m2!1d37.01071479227894!2d37.79717804131948!3f70.45209929645083!4f0.6096125392529359!5f0.7820865974627469"
-const location4 = "https://www.google.com/maps/embed?pb=!4v1634044366387!6m8!1m7!1sSR955aJXM4ILbPL7Te59Aw!2m2!1d52.36935847723119!2d4.901749024372501!3f120.29985002870198!4f-7.934748951861167!5f0.7820865974627469"
-const location4_now = "https://www.google.com/maps/embed?pb=!4v1634035228278!6m8!1m7!1sD8dy7MUPHSVNfeNGrHR_jg!2m2!1d37.01071479227894!2d37.79717804131948!3f70.45209929645083!4f0.6096125392529359!5f0.7820865974627469"
-const location5 = "https://www.google.com/maps/embed?pb=!4v1634044366387!6m8!1m7!1sSR955aJXM4ILbPL7Te59Aw!2m2!1d52.36935847723119!2d4.901749024372501!3f120.29985002870198!4f-7.934748951861167!5f0.7820865974627469"
-const location5_now = "https://www.google.com/maps/embed?pb=!4v1634035228278!6m8!1m7!1sD8dy7MUPHSVNfeNGrHR_jg!2m2!1d37.01071479227894!2d37.79717804131948!3f70.45209929645083!4f0.6096125392529359!5f0.7820865974627469"
+const location1 = '<img src="img/aleppo_bazaar.jpg" alt="Ja zo werkt het niet">';
+const location1_now = '<iframe src="https://www.google.com/maps/embed?pb=!4v1636477612142!6m8!1m7!1sCAoSLEFGMVFpcE9hTElKb21RU1NTZ1NBQWFXOUFNTWpTcjB4NEJQNnh2REJzMUtX!2m2!1d36.1990241!2d37.1553991!3f87.78865308271607!4f2.5427527478630765!5f0.7820865974627469" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>';
+
+const location2 = '<img src="img/aleppo_alley.jpg" alt="Ja zo werkt het niet">';
+const location2_now = '<iframe id="maps_image" src="https://www.google.com/maps/embed?pb=!4v1636477821670!6m8!1m7!1sCAoSLEFGMVFpcE1FbEpqOTRGQ0E5blZSOWFKVWExbi11T1RzaFJ4T0w2cE5UWlAy!2m2!1d36.1997509!2d37.1554446!3f347.51607975480334!4f4.003654735640197!5f0.7820865974627469" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>';
+
+const location3 = '<img src="img/aleppo_hotel.jpg" alt="Ja zo werkt het niet">';
+const location3_now = '<iframe src="https://www.google.com/maps/embed?pb=!4v1636477485293!6m8!1m7!1sCAoSLEFGMVFpcE5WYUNKNlBUVFU3TnZ2VUdWVEE2ekNrVkFQSTNIdWFwV0pxa2hv!2m2!1d36.19943253354922!2d37.15604440646581!3f179.8855895586535!4f2.540210612629764!5f0.7820865974627469" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>'
+
+const location4 = '<img src="img/aleppocastle.jpg" alt="Ja zo werkt het niet">';
+const location4_now = '<iframe src="https://www.google.com/maps/embed?pb=!4v1636478165021!6m8!1m7!1sCAoSLEFGMVFpcFBKRkpEa3ppMG9pSXFVRVRSMllIaXlmOFlWa29GRWRFNDB5bTJj!2m2!1d36.1980571!2d37.1617434!3f229.42019062868306!4f-11.528123613091907!5f0.7820865974627469" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>'
+
+const location5 = '<img src="img/great_mosque_of_aleppo.jpg" alt="Ja zo werkt het niet">';
+const location5_now = '<iframe src="https://www.google.com/maps/embed?pb=!4v1636478411077!6m8!1m7!1sCAoSLEFGMVFpcE1iNkc0TXR4YWtNNTB4TVd4TDNtamJSXzJ6OGtyZG9YajBwZW5o!2m2!1d36.1997221!2d37.1638606!3f200.69872616975684!4f-23.515257967737966!5f0.7820865974627469" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>'
 
 
 //on scroll load nav title
@@ -91,7 +95,7 @@ map_controlls = (pin) => {
     switch(pin){
         case "pin1":
             console.log("pin 1 clicked");
-            document.getElementById("maps_image").src = location1;
+            document.getElementById("iframe_img_container").innerHTML = location1;
             document.getElementById("pin2").style.display = "block";
             modalinfo.style.display = "block";
             document.getElementById("popupTitle").innerHTML = "plaats 1";
@@ -99,7 +103,7 @@ map_controlls = (pin) => {
             break;
         case "pin2":
             console.log("pin 2 clicked");
-            document.getElementById("maps_image").src = location2;
+            document.getElementById("iframe_img_container").innerHTML = location2;
             document.getElementById("pin3").style.display = "block";
             modalinfo.style.display = "block";
             document.getElementById("popupTitle").innerHTML = "plaats 2";
@@ -107,7 +111,7 @@ map_controlls = (pin) => {
             break;
         case "pin3":
             console.log("pin 3 clicked");
-            document.getElementById("maps_image").src = location3;
+            document.getElementById("iframe_img_container").innerHTML = location3;
             document.getElementById("pin4").style.display = "block";
             modalinfo.style.display = "block";
             document.getElementById("popupTitle").innerHTML = "plaats 3";
@@ -115,7 +119,7 @@ map_controlls = (pin) => {
             break;
         case "pin4":
             console.log("pin 4 clicked");
-            document.getElementById("maps_image").src = location4;
+            document.getElementById("iframe_img_container").innerHTML = location4;
             document.getElementById("pin5").style.display = "block";
             modalinfo.style.display = "block";
             document.getElementById("popupTitle").innerHTML = "plaats 4";
@@ -123,7 +127,7 @@ map_controlls = (pin) => {
             break;
         case "pin5":
             console.log("pin 4 clicked");
-            document.getElementById("maps_image").src = location5;
+            document.getElementById("iframe_img_container").innerHTML = location5;
             modalinfo.style.display = "block";
             document.getElementById("popupTitle").innerHTML = "plaats 5";
             document.getElementById("popupContent").innerHTML = "kudde yogurt";
@@ -133,47 +137,50 @@ map_controlls = (pin) => {
 
 change_time = () => {
 
-    switch(document.getElementById("maps_image").src){
+    switch(document.getElementById("iframe_img_container").innerHTML){
         case location1:
-            document.getElementById("maps_image").src = location1_now;
+            document.getElementById("iframe_img_container").innerHTML = location1_now;
             change_time_button("then");
             break;
         case location1_now:
-            document.getElementById("maps_image").src = location1;
+            document.getElementById("iframe_img_container").innerHTML = location1;
             change_time_button("now");
             break;
         case location2:
-            document.getElementById("maps_image").src = location2_now;
+            document.getElementById("iframe_img_container").innerHTML = location2_now;
             change_time_button("then");
             break;
         case location2_now:
-            document.getElementById("maps_image").src = location2;
+            document.getElementById("iframe_img_container").innerHTML = location2;
             change_time_button("now");
             break;
         case location3:
-            document.getElementById("maps_image").src = location3_now;
+            document.getElementById("iframe_img_container").innerHTML = location3_now;
             change_time_button("then");
             break;
         case location3_now:
-            document.getElementById("maps_image").src = location3;
+            document.getElementById("iframe_img_container").innerHTML = location3;
             change_time_button("now");
             break;
         case location4:
-            document.getElementById("maps_image").src = location4_now;
+            document.getElementById("iframe_img_container").innerHTML = location4_now;
             change_time_button("then");
             break;
         case location4_now:
-            document.getElementById("maps_image").src = location4;
+            document.getElementById("iframe_img_container").innerHTML = location4;
             change_time_button("now");
             break;
         case location5:
-            document.getElementById("maps_image").src = location4_now;
+            document.getElementById("iframe_img_container").innerHTML = location5_now;
             change_time_button("then");
             break;
         case location5_now:
-            document.getElementById("maps_image").src = location4;
+            document.getElementById("iframe_img_container").innerHTML = location5;
             change_time_button("now");
             break;
+        default:
+            console.log(document.getElementById("iframe_img_container").innerHTML);
+            console.log(location1_now);
     }
 }
 
