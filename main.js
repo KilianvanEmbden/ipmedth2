@@ -28,7 +28,8 @@ window.onscroll = function(event){
   //music player spinning 
   document.getElementById("radio_player_iframe").addEventListener("mouseover", function(){
       console.log("if teogevoegd");
-    if(window.event === 0){
+    setInterval
+      if(window.event === 0){
         console.log("Nu draaien bitch");
         document.getElementById("radio_player_img").style.animation = "rotate360 4s linear infinite";
     }
