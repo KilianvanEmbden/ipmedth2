@@ -101,6 +101,7 @@ map_controlls = (pin) => {
             console.log("pin 2 clicked");
             document.getElementById("maps_image").src = location2;
             document.getElementById("pin3").style.display = "block";
+            modalinfo.style.display = "block";
             document.getElementById("popupTitle").innerHTML = "plaats 2";
             document.getElementById("popupContent").innerHTML = "Hebban olla vogala nestas hagunnan hinase hic enda thu uuat unbidan uue nu";
             break;
@@ -108,6 +109,7 @@ map_controlls = (pin) => {
             console.log("pin 3 clicked");
             document.getElementById("maps_image").src = location3;
             document.getElementById("pin4").style.display = "block";
+            modalinfo.style.display = "block";
             document.getElementById("popupTitle").innerHTML = "plaats 3";
             document.getElementById("popupContent").innerHTML = "hele mooie text of ik weet niks";
             break;
@@ -115,12 +117,14 @@ map_controlls = (pin) => {
             console.log("pin 4 clicked");
             document.getElementById("maps_image").src = location4;
             document.getElementById("pin5").style.display = "block";
+            modalinfo.style.display = "block";
             document.getElementById("popupTitle").innerHTML = "plaats 4";
             document.getElementById("popupContent").innerHTML = "het is wit en loopt in de wei";
             break;
         case "pin5":
             console.log("pin 4 clicked");
             document.getElementById("maps_image").src = location5;
+            modalinfo.style.display = "block";
             document.getElementById("popupTitle").innerHTML = "plaats 5";
             document.getElementById("popupContent").innerHTML = "kudde yogurt";
             break;
