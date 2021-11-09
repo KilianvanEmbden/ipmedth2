@@ -198,18 +198,18 @@
     height: 3rem;
     width: 3rem;
     z-index: 3;
-    opacity: 0.3;
+    display: none;
   }
   .pin:nth-child(2){
     top: 73%;
-    left: 33%;
+    left: 20%;
   }
   .pin:nth-child(3){
     top: 71%;
     left: 39.4%;
   }
   .pin:nth-child(4){
-    top: 64%;
+    top: 60%;
     left: 45%;
   }
   .pin:nth-child(5){
@@ -220,6 +220,10 @@
       top: 44%;
       left: 52.5%;
     }
+
+  #pin1{
+    display: block;
+  }
 
   /*popup styling*/
     .popup{
@@ -255,7 +259,7 @@
 
   /*modal styling */
   #mapModal {
-    z-index: 11;
+    z-index: 1000000;
     display: none;
     position: fixed;
     left: 0;
