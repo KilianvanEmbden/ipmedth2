@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
   }
-  
+
   html{
     font-size: 62,5%;
+    font-family: 'Roboto', sans-serif;
   }
   
   :root{
@@ -34,10 +35,13 @@
 
   h2{
     font-size: 1.5rem;
+  }
+  
+  .h2_padding{
     padding-left: 10vw;
     padding-right: 10vw;
   }
-  
+
   nav{
     position: fixed;
     width: 100%;
@@ -247,6 +251,14 @@
         z-index: 10000;
     }
 
+    .popup_title{
+      padding-left: 10px;
+    }
+
+    #popupContent{
+      padding: 10px;
+    }
+
     #popupModal{
       display: none;
     }
@@ -254,6 +266,8 @@
     .popup_title > h2{
         display: inline-block;
         font-size: 2rem;
+        margin-right: auto;
+        
     }
 
     .popup_title{
@@ -265,18 +279,16 @@
       background-color: var(--night);
       width: 100vw;
       height: 3rem;
-
-    }
-
-    .right{
-      float: right;
+      display: flex;
+      justify-content: right;
+      align-items: center;
     }
 
     .mapBtn{
       height: 100%;
       border: none;
       color: var(--platinum);
-      background-color: var(--night);
+      background-color: #1a2f34;
       font-size: 2rem;
       border-right: 2px solid #000000;
       border-left: 2px solid #000000;
@@ -285,8 +297,9 @@
     }
 
     .close_popup{
-        /* FIXME deze staat nog niet in het midden */
-        font-size: 3rem;
+      margin-right: 10px;
+      margin-left: 10px;
+      font-size: 2rem;
     }
 
   /*modal styling */
