@@ -87,7 +87,7 @@ window.onscroll = function(event){
 
 
 map_controlls = (pin) => {
-    change_time_button("nu");
+    change_time_button("NU");
 
     switch(pin){
         case "pin1":
@@ -137,43 +137,43 @@ change_time = () => {
     switch(document.getElementById("iframe_img_container").innerHTML){
         case location1:
             document.getElementById("iframe_img_container").innerHTML = location1_now;
-            change_time_button("toen");
+            change_time_button("TOEN");
             break;
         case location1_now:
             document.getElementById("iframe_img_container").innerHTML = location1;
-            change_time_button("nu");
+            change_time_button("NU");
             break;
         case location2:
             document.getElementById("iframe_img_container").innerHTML = location2_now;
-            change_time_button("toen");
+            change_time_button("TOEN");
             break;
         case location2_now:
             document.getElementById("iframe_img_container").innerHTML = location2;
-            change_time_button("nu");
+            change_time_button("NU");
             break;
         case location3:
             document.getElementById("iframe_img_container").innerHTML = location3_now;
-            change_time_button("toen");
+            change_time_button("TOEN");
             break;
         case location3_now:
             document.getElementById("iframe_img_container").innerHTML = location3;
-            change_time_button("nu");
+            change_time_button("NU");
             break;
         case location4:
             document.getElementById("iframe_img_container").innerHTML = location4_now;
-            change_time_button("toen");
+            change_time_button("TOEN");
             break;
         case location4_now:
             document.getElementById("iframe_img_container").innerHTML = location4;
-            change_time_button("nu");
+            change_time_button("NU");
             break;
         case location5:
             document.getElementById("iframe_img_container").innerHTML = location5_now;
-            change_time_button("toen");
+            change_time_button("TOEN");
             break;
         case location5_now:
             document.getElementById("iframe_img_container").innerHTML = location5;
-            change_time_button("nu");
+            change_time_button("NU");
             break;
         default:
             console.log(document.getElementById("iframe_img_container").innerHTML);

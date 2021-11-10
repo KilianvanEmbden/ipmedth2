@@ -233,15 +233,6 @@
   transition-duration: 0.2s;
 }
 
-/* @keyframes pin_up_down{
-  from{
-    transform: translateY();
-  }
-  to{
-    transform: translateY(1rem);
-  }
-} */
-
   .pin:nth-child(2){
     top: 63%;
     left: 20%;
@@ -363,7 +354,7 @@
   }
 
   .modal-content {
-    background-color: var(--platinum); /* om een of andere rede gaat de ruimte tussen de iframe en de knop niet weg, dit moet dus dezelfde kleur als de knop */
+    background-color: var(--platinum);
     margin: auto;
     height: 100vh;
     overflow: hidden;
@@ -373,10 +364,16 @@
   }
 
   .now_button {
-    width: 100%;
-    background-color: var(--platinum); /* FIXME hier nog ff een mooie knop van maken */
+    width: 33.3333%;
+    margin-left: 33.33333%;
+    background-color: teal; 
     border-style: none;
     cursor: pointer;
+    transform: translateY(1vh);
+    height: 6vh;
+    border-radius: 20px 20px 20px 20px;
+    border: 3px solid var(--night);
+    box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.4);
   }
 
   .close_modal {
