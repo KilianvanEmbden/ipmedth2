@@ -19,7 +19,7 @@ const location5_now = '<iframe src="https://www.google.com/maps/embed?pb=!4v1636
 
 
 //on scroll load nav title
-window.onscroll = function(event){
+window.onscroll = (event) => {
     if(window.scrollY < 0.7 * vh){
         document.getElementById("nav_location").innerHTML = "Home";
       }
@@ -37,7 +37,7 @@ window.onscroll = function(event){
 
   //horizontal scroll script
   //alvarotrigo.com/blog/scroll-horizontally-with-mouse-wheel-vanilla-java/
-  (function(){
+  (() => {
     init();
 
     var g_containerInViewport;
@@ -52,7 +52,7 @@ window.onscroll = function(event){
 
     //How much does user need to scroll
     function setStickyContainersSize(){
-        document.querySelectorAll('.sticky-container').forEach(function(container){
+        document.querySelectorAll('.sticky-container').forEach((container) => {
             //edited formula, niet aanpasen
             const stikyContainerHeight = (container.querySelector('.vertical-main').offsetWidth * 2.5 +  window.innerHeight);
             container.setAttribute('style', 'height: ' + stikyContainerHeight + 'px');
@@ -66,7 +66,7 @@ window.onscroll = function(event){
     }
 
     function wheelHandler(evt){
-        const containerInViewPort = Array.from(document.querySelectorAll('.sticky-container')).filter(function(container){
+        const containerInViewPort = Array.from(document.querySelectorAll('.sticky-container')).filter((container) => {
             return isElementInViewport(container);
         })[0];
 
@@ -189,10 +189,10 @@ change_time_button = (text) => {
 var modalinfo = document.getElementById("popupModal");
 var closepopup = document.getElementsByClassName("close_popup")[0];
 
-closepopup.onclick = function() {
+closepopup.onclick = () => {
     modalinfo.style.display = "none";
 }
-window.onclick = function(event) {
+window.onclick = (event) => {
     if (event.target == modalinfo) {
     modalinfo.style.display = "none";
     }
@@ -205,15 +205,15 @@ var btnmap = document.getElementById("mapBtn");
 
 var span = document.getElementsByClassName("close_modal")[0];
 
-btnmap.onclick = function() {
+btnmap.onclick = () => {
     modalmap.style.display = "block";
 }
 
-span.onclick = function() {
+span.onclick = () => {
     modalmap.style.display = "none";
 }
 
-window.onclick = function(event) {
+window.onclick = (event) => {
     if (event.target == modalmap) {
     modalmap.style.display = "none";
     }
