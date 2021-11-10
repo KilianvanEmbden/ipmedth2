@@ -253,10 +253,6 @@
         z-index: 10000;
     }
 
-    .popup_title{
-      padding-left: 10px;
-    }
-
     #popupContent{
       padding: 10px;
     }
@@ -284,6 +280,7 @@
       display: flex;
       justify-content: right;
       align-items: center;
+      padding-left: 10px;
     }
 
     .mapBtn{
@@ -334,11 +331,14 @@
     }
   }
 
-.modal_top{
-  width: 100vw;
-  height: 8vh;
-  background-color: var(--night);
-}
+  .modal_top{
+    width: 100%;
+    height: 8vh;
+    background-color: var(--night);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
 
   .modal-content {
     background-color: var(--platinum); /* om een of andere rede gaat de ruimte tussen de iframe en de knop niet weg, dit moet dus dezelfde kleur als de knop */
@@ -350,19 +350,16 @@
   .now_button {
     transform: translateY(-5px);
     height: 7.2vh;
-    width: 100vw;
+    width: 100%;
     background-color: var(--platinum); /* FIXME hier nog ff een mooie knop van maken */
     border-style: none;
   }
 
   .close_modal {
     color: #aaaaaa;
-    float: right;
-    font-size: 8vh; /* FIXME deze staat nog niet in het midden */
-    height: 8vh;
+    font-size: 8vh;
     font-weight: bold;
-    justify-content: center;
-    margin: 0;
+    margin-right: 10px;
   }
   
   .close_modal:hover,

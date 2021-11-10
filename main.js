@@ -91,6 +91,7 @@ window.onscroll = function(event){
 
 
 map_controlls = (pin) => {
+    change_time_button("nu");
 
     switch(pin){
         case "pin1":
@@ -140,43 +141,43 @@ change_time = () => {
     switch(document.getElementById("iframe_img_container").innerHTML){
         case location1:
             document.getElementById("iframe_img_container").innerHTML = location1_now;
-            change_time_button("then");
+            change_time_button("toen");
             break;
         case location1_now:
             document.getElementById("iframe_img_container").innerHTML = location1;
-            change_time_button("now");
+            change_time_button("nu");
             break;
         case location2:
             document.getElementById("iframe_img_container").innerHTML = location2_now;
-            change_time_button("then");
+            change_time_button("toen");
             break;
         case location2_now:
             document.getElementById("iframe_img_container").innerHTML = location2;
-            change_time_button("now");
+            change_time_button("nu");
             break;
         case location3:
             document.getElementById("iframe_img_container").innerHTML = location3_now;
-            change_time_button("then");
+            change_time_button("toen");
             break;
         case location3_now:
             document.getElementById("iframe_img_container").innerHTML = location3;
-            change_time_button("now");
+            change_time_button("nu");
             break;
         case location4:
             document.getElementById("iframe_img_container").innerHTML = location4_now;
-            change_time_button("then");
+            change_time_button("toen");
             break;
         case location4_now:
             document.getElementById("iframe_img_container").innerHTML = location4;
-            change_time_button("now");
+            change_time_button("nu");
             break;
         case location5:
             document.getElementById("iframe_img_container").innerHTML = location5_now;
-            change_time_button("then");
+            change_time_button("toen");
             break;
         case location5_now:
             document.getElementById("iframe_img_container").innerHTML = location5;
-            change_time_button("now");
+            change_time_button("nu");
             break;
         default:
             console.log(document.getElementById("iframe_img_container").innerHTML);
@@ -202,29 +203,32 @@ window.onclick = function(event) {
     }
 }
 
-//map popup
-// Get the modal
+//foto, 360 popup
 var modalmap = document.getElementById("mapModal");
 
-// Get the button that opens the modal
 var btnmap = document.getElementById("mapBtn");
 
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close_modal")[0];
 
-// When the user clicks the button, open the modal 
 btnmap.onclick = function() {
     modalmap.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modalmap.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modalmap) {
     modalmap.style.display = "none";
     }
 }
+
+//maak elements doe niet onder de scrollbar mogen verdwijnen kleiner als er een scrollbar is
+window.onload = () =>{
+    var scrollSize = window.innerWidth - document.documentElement.clientWidth;
+    var newWidth = window.innerWidth - scrollSize  + "px";
+    console.log(newWidth);
+    document.getElementById("popupTitleContainer").style.width = newWidth;
+    document.getElementById("mapModal").style.width = newWidth;
+  }
