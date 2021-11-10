@@ -39,7 +39,7 @@
   }
 
   h2{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   
   .h2_padding{
@@ -371,6 +371,7 @@
     width: 100%;
     background-color: var(--platinum); /* FIXME hier nog ff een mooie knop van maken */
     border-style: none;
+    cursor: pointer;
   }
 
   .close_modal {
