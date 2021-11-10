@@ -373,7 +373,6 @@
   }
 
   .now_button {
-    transform: translateY(-5px);
     width: 100%;
     background-color: var(--platinum); /* FIXME hier nog ff een mooie knop van maken */
     border-style: none;
