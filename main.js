@@ -1,5 +1,10 @@
+//vh const
 const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
 
+//global var music player on
+let playing = false;
+
+//list with imageg and maps iframes
 const location1 = '<img src="img/aleppo_bazaar.jpg" alt="Ja zo werkt het niet">';
 const location1_now = '<iframe src="https://www.google.com/maps/embed?pb=!4v1636477612142!6m8!1m7!1sCAoSLEFGMVFpcE9hTElKb21RU1NTZ1NBQWFXOUFNTWpTcjB4NEJQNnh2REJzMUtX!2m2!1d36.1990241!2d37.1553991!3f87.78865308271607!4f2.5427527478630765!5f0.7820865974627469" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>';
 
@@ -27,17 +32,11 @@ window.onscroll = function(event){
     if(window.scrollY >= 14.7 * vh){
       document.getElementById("nav_location").innerHTML = "Map";
     }
+    if(window.scrollY >= 15.7 * vh){
+        document.getElementById("nav_location").innerHTML = "Watch";
+      }
   };
 
-  //music player spinning 
-  document.getElementById("radio_player_iframe").addEventListener("mouseover", function(){
-      console.log("if teogevoegd");
-    setInterval
-      if(window.event === 0){
-        console.log("Nu draaien bitch");
-        document.getElementById("radio_player_img").style.animation = "rotate360 4s linear infinite";
-    }
-});
 
   //horizontal scroll script
   //alvarotrigo.com/blog/scroll-horizontally-with-mouse-wheel-vanilla-java/
@@ -57,6 +56,7 @@ window.onscroll = function(event){
     //How much does user need to scroll
     function setStickyContainersSize(){
         document.querySelectorAll('.sticky-container').forEach(function(container){
+            //edited formula, niet aanpasen
             const stikyContainerHeight = (container.querySelector('.vertical-main').offsetWidth * 2.5 +  window.innerHeight);
             container.setAttribute('style', 'height: ' + stikyContainerHeight + 'px');
         });

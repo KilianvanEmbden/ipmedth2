@@ -4,7 +4,7 @@
   }
 
   html{
-    font-size: 62,5%;
+    font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
   }
   
@@ -82,6 +82,7 @@
     position: fixed;
     border-radius: 50%;
   }
+
   #radio_player_iframe{
     z-index: 1;
     position: relative;
@@ -98,9 +99,14 @@
     position: fixed;
     pointer-events: none;
   }
+
   #radio_player_fig img{
     height: 100%;
     width: 100%;
+  }
+
+  #radio_player:hover > #radio_player_fig img{
+    animation: rotate360 4s infinite;
   }
 
   @keyframes rotate360{
