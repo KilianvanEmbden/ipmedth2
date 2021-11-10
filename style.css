@@ -140,8 +140,8 @@
     height: 100%;
     animation-name: fade;
     z-index: 1;
-    animation-delay: 1s;
-    animation-duration: 4s;
+    animation-delay: 1.5s;
+    animation-duration: 5s;
     animation-fill-mode: forwards;
   }
 
@@ -217,7 +217,23 @@
     width: 3rem;
     z-index: 3;
     display: none;
+    transition-duration: 0.2s;
   }
+.pin:hover{
+  cursor: pointer;
+  transform: translateY(-0.5rem);
+  transition-duration: 0.2s;
+}
+
+/* @keyframes pin_up_down{
+  from{
+    transform: translateY();
+  }
+  to{
+    transform: translateY(1rem);
+  }
+} */
+
   .pin:nth-child(2){
     top: 63%;
     left: 20%;

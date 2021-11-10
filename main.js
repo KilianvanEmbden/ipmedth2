@@ -100,7 +100,7 @@ map_controlls = (pin) => {
             document.getElementById("pin2").style.display = "block";
             modalinfo.style.display = "block";
             document.getElementById("popupTitle").innerHTML = "De markt";
-            document.getElementById("popupContent").innerHTML = "Eerst was dit een bruisende markt, echter is nu alleen nog maar een gang en een hoop puin over. De heropbouw is begonnen maar het zal nog een tijd duren voordat mensen hier weer hun waren zullen verkopen.";
+            document.getElementById("popupContent").innerHTML = "Eerst was dit een bruisende markt, echter is nu alleen nog maar een gang en een hoop puin over. De heropbouw is begonnen maar het zal nog een tijd duren voordat mensen hier weer hun spullen zullen verkopen.";
             break;
         case "pin2":
             console.log("pin 2 clicked");
@@ -108,7 +108,7 @@ map_controlls = (pin) => {
             document.getElementById("pin3").style.display = "block";
             modalinfo.style.display = "block";
             document.getElementById("popupTitle").innerHTML = "Een woonwijk";
-            document.getElementById("popupContent").innerHTML = "Vroeger woonden hier veel gezinnen, maar door de verwoesting zijn veel huizen onleefbaar gemaakt. Het herbouwen van huizen zal binnekort beginnen maar het zal nog jaren duren voordat hier weer gezinnen zullen wonen.";
+            document.getElementById("popupContent").innerHTML = "Vele straten zijn verwoest door de oorlog. Veel van het puin is al opgeruimd maar er moet nog veel gebeuren voordat alle straten weer bruikbaar zijn.";
             break;
         case "pin3":
             console.log("pin 3 clicked");
