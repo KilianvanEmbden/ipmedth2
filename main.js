@@ -99,39 +99,39 @@ map_controlls = (pin) => {
             document.getElementById("iframe_img_container").innerHTML = location1;
             document.getElementById("pin2").style.display = "block";
             modalinfo.style.display = "block";
-            document.getElementById("popupTitle").innerHTML = "plaats 1";
-            document.getElementById("popupContent").innerHTML = "Hier ging ik altijd met mijn matties jonko klappen";
+            document.getElementById("popupTitle").innerHTML = "De markt";
+            document.getElementById("popupContent").innerHTML = "Eerst was dit een bruisende markt, echter is nu alleen nog maar een gang en een hoop puin over. De heropbouw is begonnen maar het zal nog een tijd duren voordat mensen hier weer hun waren zullen verkopen.";
             break;
         case "pin2":
             console.log("pin 2 clicked");
             document.getElementById("iframe_img_container").innerHTML = location2;
             document.getElementById("pin3").style.display = "block";
             modalinfo.style.display = "block";
-            document.getElementById("popupTitle").innerHTML = "plaats 2";
-            document.getElementById("popupContent").innerHTML = "Hebban olla vogala nestas hagunnan hinase hic enda thu uuat unbidan uue nu";
+            document.getElementById("popupTitle").innerHTML = "Een woonwijk";
+            document.getElementById("popupContent").innerHTML = "Vroeger woonden hier veel gezinnen, maar door de verwoesting zijn veel huizen onleefbaar gemaakt. Het herbouwen van huizen zal binnekort beginnen maar het zal nog jaren duren voordat hier weer gezinnen zullen wonen.";
             break;
         case "pin3":
             console.log("pin 3 clicked");
             document.getElementById("iframe_img_container").innerHTML = location3;
             document.getElementById("pin4").style.display = "block";
             modalinfo.style.display = "block";
-            document.getElementById("popupTitle").innerHTML = "plaats 3";
-            document.getElementById("popupContent").innerHTML = "hele mooie text of ik weet niks";
+            document.getElementById("popupTitle").innerHTML = "Het hotel";
+            document.getElementById("popupContent").innerHTML = "Dit beeldschone hotel is met haast verlaten toen de oorlog begon. Ook al hebben de bommen dit gebouw voor het grootste deel gemist mist er toch een stok uit de muur, ook zitten de muren vol kogelgaten van gevechten die hier plaats hebben gevonden.";
             break;
         case "pin4":
             console.log("pin 4 clicked");
             document.getElementById("iframe_img_container").innerHTML = location4;
             document.getElementById("pin5").style.display = "block";
             modalinfo.style.display = "block";
-            document.getElementById("popupTitle").innerHTML = "plaats 4";
-            document.getElementById("popupContent").innerHTML = "het is wit en loopt in de wei";
+            document.getElementById("popupTitle").innerHTML = "De poort";
+            document.getElementById("popupContent").innerHTML = "Deze poort aan de rand van de stad is gepaard gebleven, hier werd niet veel gevochten. Ook al ziet dit deel van de stad er een stuk beter uit dan de rest van de stad, zien we nogsteeds ingestorte en verwoeste gebouwen op de achtergrond.";
             break;
         case "pin5":
             console.log("pin 4 clicked");
             document.getElementById("iframe_img_container").innerHTML = location5;
             modalinfo.style.display = "block";
-            document.getElementById("popupTitle").innerHTML = "plaats 5";
-            document.getElementById("popupContent").innerHTML = "kudde yogurt";
+            document.getElementById("popupTitle").innerHTML = "De citadel";
+            document.getElementById("popupContent").innerHTML = "Ooit een van de grootste en oudste kastelen in de wereld en een plek voor de inwoners van Kobani om samen te komen is met de grond gelijk gemaakt. Een stuk geschsiedenis verloren gegaan aan de oorlog dat nooit meer terug zal keren naar de oude staat.";
             break;
     }
 };
