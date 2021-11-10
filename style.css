@@ -99,7 +99,7 @@
     position: fixed;
     pointer-events: none;
   }
-
+  
   #radio_player_fig img{
     height: 100%;
     width: 100%;
@@ -215,8 +215,10 @@
 
   .section_map > figure{
     width: 100%;
-    position: relative;
+    height: 100%;
+    position: absolute;
   }
+
   .pin{
     position: absolute;
     height: 3rem;
