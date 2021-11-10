@@ -1,9 +1,6 @@
 //vh const
 const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
 
-//global var music player on
-let playing = false;
-
 //list with imageg and maps iframes
 const location1 = '<img src="img/aleppo_bazaar.jpg" alt="Ja zo werkt het niet">';
 const location1_now = '<iframe src="https://www.google.com/maps/embed?pb=!4v1636477612142!6m8!1m7!1sCAoSLEFGMVFpcE9hTElKb21RU1NTZ1NBQWFXOUFNTWpTcjB4NEJQNnh2REJzMUtX!2m2!1d36.1990241!2d37.1553991!3f87.78865308271607!4f2.5427527478630765!5f0.7820865974627469" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>';
@@ -78,7 +75,6 @@ window.onscroll = function(event){
         }
 
         //compares scroll and size of containers to show current element
-        const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
         var isPlaceHolderBelowTop = + containerInViewPort.offsetTop < document.documentElement.scrollTop;
         var isPlaceHolderBelowBottom = containerInViewPort.offsetTop + containerInViewPort.offsetHeight > document.documentElement.scrollTop;
         let g_canScrollHorizontally = isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
@@ -191,7 +187,6 @@ change_time_button = (text) => {
 
 //info popup
 var modalinfo = document.getElementById("popupModal");
-var btninfo = document.getElementById("pin1");
 var closepopup = document.getElementsByClassName("close_popup")[0];
 
 closepopup.onclick = function() {
